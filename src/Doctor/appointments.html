@@ -133,7 +133,7 @@
                 </nav>
             </header>
             <!-- Breadcrumb + Top Right Icons -->
-            <div class="flex items-center justify-between mb-6 pt-[39px]">
+            <div class="flex items-center justify-between  mt-12 mb-5">
 
                 <!-- Breadcrumb -->
                 <div class="flex items-center gap-2 text-base font-normal text-gray">
@@ -243,21 +243,28 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col sm:flex-row sm:items-center justify-end gap-2.5">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-end gap-2.5 ">
                     <button
-                        class="w-[233px] h-12 rounded-md border border-sea-green-dark-1 flex items-center justify-center gap-2 bg-mint-cream cursor-pointer">
-                        <span class="font-medium text-sm text-gray max-w-[166px] text-left">Get QR pay via UPI
-                            confirm delivery</span>
-                        <span class="material-symbols-outlined text-sea-green-dark1">currency_rupee_circle</span>
-                    </button>
+    disabled
+    class="w-[233px] h-12 rounded-md border border-gray-light3 flex items-center justify-center gap-2 cursor-not-allowed">
+    <span class="font-medium text-sm text-gray-light-3 max-w-[166px] text-left">
+        Get QR pay via UPI confirm delivery
+    </span>
+    <span class="material-symbols-outlined text-gray-light-3">
+        currency_rupee_circle
+    </span>
+</button>
 
-                    <button
-                        class="w-[233px] h-12 rounded-md border border-sea-green-dark-1 flex items-center justify-center gap-2 bg-mint-cream cursor-pointer">
-                        <span class="font-medium text-sm text-gray max-w-[166px] text-left">Pay via payment gateway
-                            confirm
-                            delivery</span>
-                        <span class="material-symbols-outlined text-sea-green-dark1">currency_rupee_circle</span>
-                    </button>
+<button
+    disabled
+    class="w-[233px] h-12 rounded-md border border-gray-light3 flex items-center justify-center gap-2 cursor-not-allowed">
+    <span class="font-medium text-sm text-gray-light-3 max-w-[166px] text-left">
+        Pay via payment gateway confirm delivery
+    </span>
+    <span class="material-symbols-outlined text-gray-light-3">
+        currency_rupee_circle
+    </span>
+</button>
                 </div>
 
                 <div class="flex flex-col gap-2.5">
@@ -807,6 +814,7 @@
         </section>
     </main>
 
+   
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/script/appointment.js"></script>
 </body>

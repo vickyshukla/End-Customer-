@@ -2029,94 +2029,90 @@
                 </div>
 
                 <!--Order Details Popup-->
-                <div
-                    class="fixed inset-0 bg-transparent-black flex items-center justify-center hidden orderDetailsPopup z-9999">
-                    <div class="w-[432px] bg-white rounded-[10px] flex flex-col gap-7 p-5">
-                        <div class="flex items-center justify-between">
-                            <p class="font-semibold text-[22px] text-dark-gray">Order Details</p>
-                            <div
-                                class="w-[50px] h-[50px] flex items-center justify-center border border-deep-teal rounded-[10px] cursor-pointer closePopupBtn">
-                                <span class="material-symbols-outlined">close</span>
+             <div class="fixed inset-0 bg-transparent-black flex items-center justify-center hidden orderDetailsPopup z-9999">
+    <div class="w-[432px] bg-white rounded-[10px] flex flex-col gap-4 p-5">
+        <div class="flex items-center justify-between">
+            <p class="font-semibold text-[22px] text-gray">Order Details</p>
+            <div class="w-[50px] h-[50px] flex items-center justify-center border border-deep-teal rounded-[10px] cursor-pointer closePopupBtn">
+                <span class="material-symbols-outlined">close</span>
+            </div>
+        </div>
+
+        <div class="border border-gray-light3 rounded-2xl p-4">
+            <div class="flex items-start justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-full">
+                        <img src="/assets/img/doctor.svg" alt="doctor">
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <div class="flex items-center gap-2.5">
+                            <p class="font-semibold text-lg text-gray">Dr Ritika Singh </p>
+                            <img src="/assets/img/badge.svg" alt="badge">
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <p class="font-normal text-base text-dark-gray">4.3</p>
+                            <div class="flex items-center gap-0.5">
+                                <img src="/assets/img/star.svg" alt="star">
+                                <img src="/assets/img/star.svg" alt="star">
+                                <img src="/assets/img/star.svg" alt="star">
+                                <img src="/assets/img/star.svg" alt="star">
+                                <img src="/assets/img/star.svg" alt="star">
                             </div>
                         </div>
-
-                        <div class="border border-gray-light3 rounded-2xl p-4">
-                            <div class="flex items-start justify-between">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-11 h-11 rounded-full">
-                                        <img src="/assets/img/doctor.svg" alt="doctor">
-                                    </div>
-
-                                    <div class="flex flex-col gap-2">
-                                        <div class="flex items-center gap-2.5">
-                                            <p class="font-semibold text-xl text-gray">Dr Ritika Singh </p>
-                                            <img src="/assets/img/badge.svg" alt="badge">
-                                        </div>
-                                        <div class="flex items-center gap-2.5">
-                                            <p class="font-normal text-base text-dark-gray">4.3</p>
-                                            <div class="flex items-center gap-0.5">
-                                                <img src="/assets/img/star.svg" alt="star">
-                                                <img src="/assets/img/star.svg" alt="star">
-                                                <img src="/assets/img/star.svg" alt="star">
-                                                <img src="/assets/img/star.svg" alt="star">
-                                                <img src="/assets/img/star.svg" alt="star">
-                                            </div>
-                                        </div>
-                                        <p class="font-normal text-base text-gray-dark-1">MBBS, MD (Dermatelogy)</p>
-                                        <p class="font-normal text-base text-gray-dark-1">12 Years Experience</p>
-                                        <p class="font-normal text-base text-gray-dark-1">Female Doctor</p>
-                                    </div>
-                                </div>
-
-                                <p class="font-normal text-xs">Order #R32512</p>
-                            </div>
-
-
-                            <hr class="text-deep-teal mt-5">
-                            <p class="pt-2 font-normal text-base text-gray-dark-1">24/04/2025 - 03:34 PM</p>
-                            <div class="flex flex-col gap-2.5 pt-2.5">
-                                <div class="flex flex-col gap-2">
-                                    <div class="flex items-center justify-between pt-1.5">
-                                        <p class="font-normal text-xs text-gray-dark-1">6km away</p>
-                                        <div class="flex items-center gap-1">
-                                            <span
-                                                class="material-symbols-outlined text-sm! text-gray-dark-1">schedule</span>
-                                            <p class="font-semibold text-sm text-gray">20 minutes </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center justify-between ">
-                                        <p class="font-normal text-xs text-gray-dark-1">Appointment</p>
-                                        <p class="font-semibold text-sm text-gray">24/04/2025 - 4 to 6 PM</p>
-                                    </div>
-                                    <div class="flex items-center justify-between ">
-                                        <p class="font-normal text-xs text-gray-dark-1">Location</p>
-                                        <p class="font-semibold text-sm text-gray">Andheri E - 416001</p>
-                                    </div>
-                                    <div class="flex items-center justify-between">
-                                        <div class="flex items-center gap-2">
-                                            <input type="radio" class="accent-sea-green-dark1 cursor-pointer" checked>
-                                            <p class="font-normal text-sm text-gray">Clinic</p>
-                                        </div>
-                                        <p class="font-normal text-base text-gray">Pay directly to the doctor</p>
-                                    </div>
-                                    <hr class="text-deep-teal">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center justify-center gap-[26px]">
-                            <button
-                                class="w-[160px] h-[38px] flex items-center justify-center border border-coral-red cursor-pointer rounded-[10px] cancelBtnPopup">
-                                <span class="font-bold text-tomato-red text-[15px]">Cancel</span>
-                            </button>
-
-                            <a href="appointments.html"
-                                class="w-[160px] h-[38px] flex items-center justify-center bg-teal-green cursor-pointer rounded-[10px] viewAppointmentBtn">
-                                <span class="font-bold text-white text-[15px]">View Appointment</span>
-                            </a>
-                        </div>
+                        <p class="text-base text-gray-dark-1">MBBS, MD (Dermatelogy)</p>
+                        <p class=" text-base text-gray-dark-1">12 Years Experience</p>
+                        <p class=" text-base text-gray-dark-1">Female Doctor</p>
                     </div>
                 </div>
+
+               <p class="font-medium text-sm text-charcoal-black">Order #R32512</p>
+            </div>
+
+            <hr class="text-deep-teal mt-5">
+            <p class="pt-2 font-normal text-[16px] text-gray-dark-1">24/04/2025 - 03:34 PM</p>
+            <div class="flex flex-col gap-2.5 pt-2.5">
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center justify-between pt-1.5">
+                        <p class="font-normal text-sm text-gray-dark-1">6km away</p>
+                        <div class="flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm! text-gray-dark-1">schedule</span>
+                            <p class="font-normal text-sm text-gray">20 minutes </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between ">
+                        <p class="font-normal text-sm text-gray-dark-1">Appointment</p>
+                        <p class="font-normal text-sm text-gray">24/04/2025 - 4 to 6 PM</p>
+                    </div>
+                    <div class="flex items-center justify-between ">
+                        <p class="font-normal text-sm text-gray-dark-1">Location</p>
+                        <p class="font-normal text-sm text-gray">Andheri E - 416001</p>
+                    </div>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <input type="radio" class="w-5 h-5 accent-sea-green-dark1 cursor-pointer" checked>
+                            <p class="font-normal text-base text-gray">Clinic</p>
+                        </div>
+                        <p class="font-normal text-base text-gray">Pay directly to the doctor</p>
+                    </div>
+                    
+                    <hr class="text-deep-teal">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-[26px]">
+            <button class="w-[160px] h-[38px] flex items-center justify-center border border-coral-red cursor-pointer rounded-[10px] cancelBtnPopup">
+                <span class="font-bold text-tomato-red text-[15px]">Cancel</span>
+            </button>
+
+            <a href="appointments.html" class="w-[160px] h-[38px] flex items-center justify-center bg-teal-green cursor-pointer rounded-[10px] viewAppointmentBtn">
+                <span class="font-bold text-white text-[15px]">View Appointment</span>
+            </a>
+        </div>
+    </div>
+</div> 
 
                 <!--Cancellation Reasons Popup-->
                 <div

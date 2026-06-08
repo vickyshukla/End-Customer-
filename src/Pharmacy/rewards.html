@@ -127,7 +127,7 @@
                     </div>
 
                     <!-- History -->
-                    <div class="tab px-6 py-2 cursor-pointer text-gray font-medium rounded-full" data-tab="history">
+                    <div class="tab px-6 py-2 cursor-pointer text-gray-dark font-medium rounded-full" data-tab="history">
                         History
                     </div>
                 </div>
@@ -142,20 +142,21 @@
                             <img src="/assets/img/Trophy(Congratulations).svg" alt="Trophy" class="w-22 h-22 md:w-44 md:h-44">
                             <div class="flex flex-col text-left">
                                 <h1 class="font-semibold text-2xl md:text-[42px] leading-[100%] align-middle">
-                                    Congratulation Gaurav,
+                                   Rewards Dashboard
                                 </h1>
 
-                                <p class="font-semibold text-[18px] leading-[100%] align-middle mt-4 max-w-[600px]">
-                                    Collect points from referrals, purchases, donations, and app activity.
-                                    Redeem them for exciting offers and healthcare benefits.
+                                <p class="font-semibold  text-[18px] leading-[100%] align-middle mt-4 max-w-[600px]">
+                                    Collect points from referrals, purchases, donations, and app
+                                    <br> 
+                                  activity. Redeem them for exciting offers and healthcare benefits.
                                 </p>
                             </div>
 
 
                         </div>
-                        <div class="pt-2 md:pt-0 md:text-right">
-                            <p class="text-2xl md:text-4xl font-bold">500.25</p>
-                            <p class="text-warm-yellow font-semibold text-lg md:text-2xl">Points</p>
+                        <div class="pt-2 md:pt-0 mr-5 md:text-right">
+                            <p class="text-2xl md:text-4xl  font-bold">500.25</p>
+                            <p class="text-warm-yellow font-semibold text-lg md:text-2xl"> Total Points</p>
                         </div>
                     </div>
 
@@ -647,20 +648,20 @@
                             <img src="/assets/img/Trophy(Congratulations).svg" alt="Trophy" class="w-22 h-22 md:w-44 md:h-44">
                             <div class="flex flex-col text-left">
                                 <h1 class="font-semibold text-2xl md:text-[42px] leading-[100%] align-middle">
-                                    Congratulation Gaurav,
+                                    Rewards Dashboard
                                 </h1>
 
                                 <p class="font-semibold text-[18px] leading-[100%] align-middle mt-4 max-w-[600px]">
-                                    Collect points from referrals, purchases, donations, and app activity.
-                                    Redeem them for exciting offers and healthcare benefits.
+                                    Collect points from referrals, purchases, donations, and app  <br>
+                                    activity. Redeem them for exciting offers and healthcare benefits.
                                 </p>
                             </div>
 
 
                         </div>
-                        <div class="pt-2 md:pt-0 md:text-right">
+                        <div class="pt-2 md:pt-0 mr-5 md:text-right">
                             <p class="text-2xl md:text-4xl font-bold">500.25</p>
-                            <p class="text-warm-yellow font-semibold text-lg md:text-2xl">Points</p>
+                            <p class="text-warm-yellow font-semibold text-lg md:text-2xl"> Total Points</p>
                         </div>
                     </div>
 
@@ -1322,218 +1323,70 @@
                         </div>
 
                     </div>
+<div class="max-w-[1000px] mx-auto px-4">
+    <h1 class="text-xl font-bold mt-6 text--gray-dark">History</h1>    
+    <p class="mt-2 text-sm font-normal text-gray-dark">Here, you can view and manage uploaded files</p>    
+    
+    <div class="mt-6">        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-4">            
+            <div class="flex flex-wrap gap-2">                
+                <button data-type="all" class="tab-filter-btn px-4 py-1.5 rounded-full border border-teal-800 bg-teal-800 text-white font-medium text-sm transition-all duration-150">All</button>                
+                <button data-type="Coupon" class="tab-filter-btn px-4 py-1.5 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-teal-800 hover:text-white hover:border-teal-800 font-medium text-sm transition-all duration-150">Coupons</button>                
+                <button data-type="Rewards" class="tab-filter-btn px-4 py-1.5 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-teal-800 hover:text-white hover:border-teal-800 font-medium text-sm transition-all duration-150">Rewards</button>                
+                <button data-type="Referral" class="tab-filter-btn px-4 py-1.5 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-teal-800 hover:text-white hover:border-teal-800 font-medium text-sm transition-all duration-150">Referral</button>            
+            </div>            
+            <div class="flex items-center gap-3 pt-1 sm:pt-0">                
+                <div class="relative">                    
+                    <input type="text" id="searchInput" placeholder="Search..."                        
+                        class="border border-gray-300 rounded-lg pl-8 pr-4.5 py-2 text-sm placeholder:text-gray focus:outline-none focus:border-teal-600 w-52" />                    
+                    <i data-lucide="search" class="absolute left-2.5 ml-2 top-2.5 w-4 h-4 text-gray-400"></i>                
+                </div>                
+                <div class="relative" id="filterDropdownContainer">                    
+                    <button id="filterToggleBtn" class="px-3 py-2 border border-sea-green2 bg-white rounded-lg flex items-center gap-1 text-sm text-gray-600 hover:bg-gray-50">                        
+                          <i data-lucide="chevron-down" class=" mr-2 w-4 h-4 text-#088178 ml-1"></i>                     
+                        <span>Filter</span>                        
+                                           
+                    </button>                    
+                    <div id="filterDropdownMenu" class="hidden absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded-xl shadow-lg z-10">                        
+                        <ul class="py-1 text-sm text-gray-700">                            
+                            <li data-status="All" class="filter-option px-4 py-2 hover:bg-gray-100 cursor-pointer">All Status</li>                            
+                            <li data-status="Active" class="filter-option px-4 py-2 hover:bg-gray-100 cursor-pointer">Active</li>                            
+                            <li data-status="Pending" class="filter-option px-4 py-2 hover:bg-gray-100 cursor-pointer">Pending</li>                            
+                            <li data-status="Credited" class="filter-option px-4 py-2 hover:bg-gray-100 cursor-pointer">Credited</li>                            
+                            <li data-status="Expired" class="filter-option px-4 py-2 hover:bg-gray-100 cursor-pointer">Expired</li>                        
+                        </ul>                    
+                    </div>                
+                </div>            
+            </div>        
+        </div>    
+    </div>    
 
-                    <h1 class="text-xl font-bold mt-6">My Rewards</h1>
-                    <p class="mt-4 text-sm font-normal">Here, you can view and manage uploaded files</p>
-                    <div class="mt-4">
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
-                            <!-- Left buttons -->
-                            <div class="flex gap-2">
-                                <button
-                                    class="px-3 py-1 rounded-full border border-gray-300 hover:bg-transparent-light-sea-green  hover:text-sea-green-dark1 hover:font-bold font-medium">All</button>
-                                <button
-                                    class="px-3 py-1 rounded-full border border-gray-300  hover:bg-transparent-light-sea-green  hover:text-sea-green-dark1 hover:font-bold">Coupons</button>
-                                <button
-                                    class="px-3 py-1 rounded-full border border-gray-300  hover:bg-transparent-light-sea-green  hover:text-sea-green-dark1 hover:font-bold">Rewards</button>
-                            </div>
+    <div class="overflow-x-auto  bg-white ">        
+        <table class="min-w-full table-auto border-collapse" id="historyTable">            
+            <thead>                
+                <tr style="background-color:#088178;" class="text-white text-sm font-medium">                    
+                    <th class="text-center  px-4 py-4.5 border-r border-teal-600/40 tracking-wider">Type</th>                    
+                    <th class="text-center px-4 py-3.5 border-r border-teal-600/40 tracking-wider">Source</th>                    
+                    <th class="text-center px-4 py-3.5 border-r border-teal-600/40 tracking-wider">Reward/ Offer</th>                    
+                    <th class="text-center px-4 py-3.5 border-r border-teal-600/40 tracking-wider">Date & Time</th>                    
+                    <th class="text-center px-4 py-3.5 border-r border-teal-600/40 tracking-wider">Status</th>                    
+                    <th class="text-center px-4 py-3.5 tracking-wider">Coupon Code</th>                
+                </tr>            
+            </thead>            
+            <tbody id="historyTableBody" class="text-gray- text-sm divide-y divide-gray-100">                
+                </tbody>        
+        </table>        
+        <div id="emptyMessage" class="text-center py-12 text-gray-400 font-medium hidden">No matching records found.</div>    
+    </div>    
 
-                            <!-- Right side: Search + Filter -->
-                            <div class="flex items-center gap-4 pt-3 sm:pt-0">
-                                <div class="relative">
-                                    <input type="text" id="search" placeholder="Search..."
-                                        class="border border-gray-light1 rounded-lg pl-8 pr-4 py-2 text-sm placeholder:text-gray" />
-                                    <i data-lucide="search" class="absolute left-2 top-2.5 w-4 h-4 text-gray"></i>
-                                </div>
-                                <button class="p-2 border border-gray-light1 rounded-lg">
-                                    <i data-lucide="filter" class="w-4 h-4 text-gray"></i>
-                                </button>
-                            </div>
+    <div class="flex justify-center items-center gap-4 mt-8 mb-12">        
+        <button id="prevPageBtn" class="text-sm font-semibold text-gray-400 disabled:opacity-40 disabled:cursor-not-allowed transition-colors" disabled>Previous</button>        
+        <div id="paginationNumbers" class="flex gap-1.5 text-sm font-medium"></div>        
+        <button id="nextPageBtn" class="text-sm font-semibold text-teal-700 hover:text-teal-900 transition-colors">Next</button>    
+    </div>
+</div>
 
-                        </div>
-                    </div>
-
-                    <div class="overflow-x-auto pt-4">
-                        <table class="min-w-full table-auto docTable">
-                            <thead class="text-base font-semibold">
-                                <tr>
-                                    <th class="text-center px-4 py-6 border-r border-white">
-                                        <div class="flex items-center justify-center gap-2">
-                                            Date Claimed
-
-                                        </div>
-                                    </th>
-
-                                    <th class="text-center px-4 py-6 border-r border-white">
-                                        Category
-                                    </th>
-                                    <th class="text-center px-4 py-6 border-r border-white">
-                                        Brand Name
-                                    </th>
-                                    <th class="text-center px-4 py-6 border-r border-white">
-                                        <div class="flex items-center justify-center gap-2">
-                                            Expired On
-
-                                        </div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody class=" text-gray text-sm font-normal">
-                                <tr>
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                    <td class="px-4 py-4.5 text-center">Food & Beverages</td>
-                                    <td class="px-4 py-4.5 text-center">
-                                        <img src="/assets/img/Zomato.svg" alt="Zomato"
-                                            class="inline-block w-6 h-6 mr-2 align-middle">
-                                        Zomato
-                                    </td>
-
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                    <td class="px-4 py-4.5 text-center">
-                                        Clothing & Fashion
-                                    </td>
-                                    <td class="px-4 py-4.5 text-center">
-                                        <img src="/assets/img/Nike.svg" alt="Nike"
-                                            class="inline-block w-6 h-6 mr-2 align-middle">
-                                        Nike
-                                    </td>
-
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                    <td class="px-4 py-4.5 text-center">
-                                        Transport & Travel
-                                    </td>
-
-                                    <td class="px-4 py-4.5 text-center">
-                                        <img src="/assets/img/Uber.svg" alt="Uber"
-                                            class="inline-block w-6 h-6 mr-2 align-middle">
-                                        Uber
-                                    </td>
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                    <td class="px-4 py-4.5 text-center">Food & Beverages</td>
-                                    <td class="px-4 py-4.5 text-center">
-                                        <img src="/assets/img/Zomato.svg" alt="Zomato"
-                                            class="inline-block w-6 h-6 mr-2 align-middle">
-                                        Zomato
-                                    </td>
-
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                    <td class="px-4 py-4.5 text-center">
-                                        Clothing & Fashion
-                                    </td>
-                                    <td class="px-4 py-4.5 text-center">
-                                        <img src="/assets/img/Nike.svg" alt="Nike"
-                                            class="inline-block w-6 h-6 mr-2 align-middle">
-                                        Nike
-                                    </td>
-
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                    <td class="px-4 py-4.5 text-center">
-                                        Transport & Travel
-                                    </td>
-
-                                    <td class="px-4 py-4.5 text-center">
-                                        <img src="/assets/img/Uber.svg" alt="Uber"
-                                            class="inline-block w-6 h-6 mr-2 align-middle">
-                                        Uber
-                                    </td>
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                    <td class="px-4 py-4.5 text-center">Food & Beverages</td>
-                                    <td class="px-4 py-4.5 text-center">
-                                        <img src="/assets/img/Zomato.svg" alt="Zomato"
-                                            class="inline-block w-6 h-6 mr-2 align-middle">
-                                        Zomato
-                                    </td>
-
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                    <td class="px-4 py-4.5 text-center">
-                                        Clothing & Fashion
-                                    </td>
-                                    <td class="px-4 py-4.5 text-center">
-                                        <img src="/assets/img/Nike.svg" alt="Nike"
-                                            class="inline-block w-6 h-6 mr-2 align-middle">
-                                        Nike
-                                    </td>
-
-                                    <td class="px-4 py-4.5 text-center flex flex-col items-center">
-                                        20/03/2025,14:30
-                                    </td>
-                                </tr>
-
-
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <!-- Pagination Controls -->
-                    <div class="flex justify-center items-center gap-2 mt-6">
-                        <button id="prevBtn" disabled class=" text-sm font-bold text-gray3 transition-colors">
-                            Previous
-                        </button>
-                        <div class="flex gap-1">
-                            <button
-                                class="page-btn px-3 py-1 rounded border bg-sea-green-dark border-sea-green-dark text-white"
-                                data-page="1">1</button>
-                            <button class="page-btn px-3 py-1 rounded border border-gray-300 bg-gray-100 text-black "
-                                data-page="2">2</button>
-                            <button class="page-btn px-3 py-1 rounded border border-gray-300 bg-gray-100 text-black "
-                                data-page="3">3</button>
-                        </div>
-
-                        <button id="nextBtn" class="text-sm font-bold text-gray3 transition-colors">
-                            Next
-                        </button>
-                    </div>
-                </div>
+  </div>
 
             </div>
 
@@ -1542,9 +1395,214 @@
 
 
         </div>
-        <script>
-            lucide.createIcons();
-        </script>
+
+<script>    
+(function() {        
+    // ----- DATASET -----        
+    const allData = [            
+        { type: "Coupon", source: "Zomato", reward: "10% Off", dateTime: "Mar 26, 2024, 2:25 PM", status: "Active" },            
+        { type: "Rewards", source: "Order", reward: "+ 1,200 Points", dateTime: "Mar 26, 2024, 2:25 PM", status: "Pending" },            
+        { type: "Referral", source: "App referral", reward: "₹750 Off", dateTime: "Mar 26, 2024, 2:25 PM", status: "Credited" },            
+        { type: "Rewards", source: "Nike", reward: "+ 1,200 Points", dateTime: "Mar 26, 2024, 2:25 PM", status: "Credited" },            
+        { type: "Coupon", source: "Zomato", reward: "+ 1,200 Points", dateTime: "Mar 26, 2024, 2:25 PM", status: "Active" },            
+        { type: "Coupon", source: "Order", reward: "+ 1,200 Points", dateTime: "Mar 26, 2024, 2:25 PM", status: "Expired" },             
+        { type: "Referral", source: "App referral", reward: "10% Off", dateTime: "Mar 26, 2024, 2:25 PM", status: "Pending" },            
+        { type: "Coupon", source: "Referral", reward: "10% Off", dateTime: "Mar 26, 2024, 2:25 PM", status: "Active" }        
+    ];        
+
+    // State        
+    let currentType = "all";              
+    let currentStatus = "All";            
+    let searchQuery = "";        
+    let currentPage = 1;        
+    const rowsPerPage = 5;        
+
+    // Helper: Pill badges with clean flat custom colors matching user's reference mockup image
+    function getStatusBadge(status) {            
+        const base = "inline-block min-w-[85px] text-center px-7 py-3 rounded-lg text-xs font-bold text-[14px]";            
+        switch(status) {                
+            case "Active": return `<span class="${base}" style="background-color: #1890FF2E; color: #1890FF;">Active</span>`;                
+            case "Pending": return `<span class="${base}" style="background-color: #F79E1B78; color: #E39943;">Pending</span>`;                
+            case "Credited": return `<span class="${base}" style="background-color: #CAF8E4; color: #1FA374;">Credited</span>`;                
+            case "Expired": return `<span class="${base}" style="background-color: #FFD1D2; color: #EF4444;">Expired</span>`;                
+            default: return `<span class="${base} bg-gray-100 text-gray-700">${status}</span>`;            
+        }        
+    }        
+
+    // Filter engine
+    function getFilteredData() {            
+        let filtered = [...allData];            
+        if (currentType !== "all") {                
+            filtered = filtered.filter(item => item.type === currentType);            
+        }            
+        if (currentStatus !== "All") {                
+            filtered = filtered.filter(item => item.status === currentStatus);            
+        }            
+        if (searchQuery.trim() !== "") {                
+            const q = searchQuery.trim().toLowerCase();                
+            filtered = filtered.filter(item =>                    
+                item.type.toLowerCase().includes(q) ||                    
+                item.source.toLowerCase().includes(q) ||                    
+                item.reward.toLowerCase().includes(q) ||                    
+                item.dateTime.toLowerCase().includes(q) ||                    
+                item.status.toLowerCase().includes(q)                
+            );            
+        }            
+        return filtered;        
+    }        
+
+    // Dynamic Render Engine        
+    function renderTable() {            
+        const filtered = getFilteredData();            
+        const totalRows = filtered.length;            
+        const totalPages = Math.ceil(totalRows / rowsPerPage) || 1;            
+        
+        if (currentPage > totalPages) currentPage = totalPages;            
+        const start = (currentPage - 1) * rowsPerPage;            
+        const pageData = filtered.slice(start, start + rowsPerPage);            
+        
+        const tbody = document.getElementById("historyTableBody");            
+        const emptyDiv = document.getElementById("emptyMessage");            
+        
+        if (pageData.length === 0) {                
+            tbody.innerHTML = `<tr><td colspan="6" class="text-center py-10 text-gray-400 font-medium">No matching records found.</td></tr>`;                
+            emptyDiv.classList.add("hidden");            
+        } else {                
+            emptyDiv.classList.add("hidden");                
+            let html = "";                
+            pageData.forEach(row => {                    
+                html += `<tr class="hover:bg-gray-50/60 border-b border-gray-100">                        
+                    <td class="px-4 py-4 text-center text-gray-700 font-normal">${row.type}</td>                        
+                    <td class="px-4 py-4 text-center text-gray-700 font-normal">${row.source}</td>                        
+                    <td class="px-4 py-4 text-center text-emerald-600 font-medium">${row.reward}</td>                        
+                    <td class="px-4 py-4 text-center text-gray-500 font-normal">${row.dateTime}</td>                        
+                    <td class="px-4 py-4 text-center">${getStatusBadge(row.status)}</td>                        
+                    <td class="px-4 py-4 text-center"><a href="#" class="text-teal-600 hover:text-teal-800 hover:underline font-medium">View Details</a></td>                    
+                </tr>`;                
+            });                
+            tbody.innerHTML = html;            
+        }            
+        
+        // Update pagination states           
+        const prevBtn = document.getElementById("prevPageBtn");            
+        const nextBtn = document.getElementById("nextPageBtn");            
+        
+        prevBtn.disabled = (currentPage === 1);            
+        nextBtn.disabled = (currentPage === totalPages);            
+        
+        prevBtn.classList.toggle("text-gray-400", currentPage === 1);            
+        prevBtn.classList.toggle("text-teal-700", currentPage > 1);            
+        prevBtn.classList.toggle("hover:text-teal-900", currentPage > 1);            
+        
+        nextBtn.classList.toggle("text-gray-400", currentPage === totalPages);            
+        nextBtn.classList.toggle("text-teal-700", currentPage < totalPages);            
+        
+        // Page numbers            
+        const paginationDiv = document.getElementById("paginationNumbers");            
+        paginationDiv.innerHTML = "";            
+        for (let i = 1; i <= totalPages; i++) {                
+            const pageBtn = document.createElement("button");                
+            pageBtn.textContent = i;                
+            pageBtn.className = `px-3.5 py-1 rounded-md transition-colors font-semibold ${i === currentPage ? "bg-teal-800 text-white" : "bg-gray-100 text-gray-600 hover:bg-gray-200"}`;                
+            pageBtn.addEventListener("click", () => {                    
+                currentPage = i;                    
+                renderTable();                
+            });                
+            paginationDiv.appendChild(pageBtn);            
+        }        
+    }        
+
+    function refresh() {            
+        currentPage = 1;            
+        renderTable();        
+    }        
+
+    // ----- TABS MOUSE INTERACTION AND RENDERING LIFECYCLE -----        
+    const tabBtns = document.querySelectorAll(".tab-filter-btn");        
+    tabBtns.forEach(btn => {            
+        btn.addEventListener("click", () => {                
+            tabBtns.forEach(b => {                    
+                // Reset all to default non-active state structure styles cleanly
+                b.className = "tab-filter-btn px-4 py-1.5 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-teal-800 hover:text-white hover:border-teal-800 font-medium text-sm transition-all duration-150";
+            });                
+            // Apply permanent dynamic selection theme properties on chosen element 
+            btn.className = "tab-filter-btn px-4 py-1.5 rounded-full border border-teal-800 bg-teal-800 text-white font-medium text-sm transition-all duration-150";
+            
+            currentType = btn.getAttribute("data-type");                
+            refresh();            
+        });        
+    });        
+
+    // ----- SEARCH -----        
+    const searchInput = document.getElementById("searchInput");        
+    searchInput.addEventListener("input", (e) => {            
+        searchQuery = e.target.value;            
+        refresh();        
+    });        
+
+    // ----- FILTER DROPDOWN -----        
+    const filterBtn = document.getElementById("filterToggleBtn");        
+    const filterMenu = document.getElementById("filterDropdownMenu");        
+    const filterContainer = document.getElementById("filterDropdownContainer");        
+    
+    function closeMenu() {            
+        filterMenu.classList.add("hidden");        
+    }        
+    function openMenu() {            
+        filterMenu.classList.remove("hidden");        
+    }        
+    
+    filterBtn.addEventListener("click", (e) => {            
+        e.stopPropagation();            
+        const isHidden = filterMenu.classList.contains("hidden");            
+        if (isHidden) openMenu();            
+        else closeMenu();        
+    });        
+    
+    document.addEventListener("click", (e) => {            
+        if (!filterContainer.contains(e.target)) closeMenu();        
+    });        
+    
+    const filterOptions = document.querySelectorAll(".filter-option");        
+    filterOptions.forEach(opt => {            
+        opt.addEventListener("click", (e) => {                
+            const statusValue = opt.getAttribute("data-status");                
+            if (statusValue) {                    
+                currentStatus = statusValue;                    
+                refresh();                    
+                closeMenu();                
+            }            
+        });        
+    });        
+
+    // ----- PAGINATION DIRECTION TRIGGERS -----        
+    const prevBtn = document.getElementById("prevPageBtn");        
+    const nextBtn = document.getElementById("nextPageBtn");        
+    
+    prevBtn.addEventListener("click", () => {            
+        if (currentPage > 1) {                
+            currentPage--;                
+            renderTable();            
+        }        
+    });        
+    nextBtn.addEventListener("click", () => {            
+        const filtered = getFilteredData();            
+        const totalPages = Math.ceil(filtered.length / rowsPerPage);            
+        if (currentPage < totalPages) {                
+            currentPage++;                
+            renderTable();            
+        }        
+    });        
+
+    // Execute first initialization lifecycle
+    renderTable();        
+    if (typeof lucide !== 'undefined') lucide.createIcons();    
+})();
+ lucide.createIcons();
+</script>
+
+              
+        
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="/script/main.js"></script>

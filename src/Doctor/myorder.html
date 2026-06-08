@@ -104,13 +104,7 @@
                     <a href="#" class="text-gray hover:text-teal-700">My Accounts</a><span class="text-gray-400">&gt;</span>
                     <span class="text-gray3 font-medium">Order History</span>
                 </div>
-                <button class="text-gray-800 hover:text-black transition flex-shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 md:w-9 md:h-9" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
+                
             </div>
 
             <!-- Header Actions -->
@@ -172,16 +166,21 @@
                             style="color:#088178;">arrow_drop_down</span>
                     </div>
                 </div>
-                <div class="relative w-full md:w-auto">
-                    <select
-                        class="appearance-none bg-white border border-gray-200 rounded-md pl-4 pr-10 py-2 text-sm text-gray-light1 w-full md:min-w-[320px] focus:outline-none">
-                        <option>Featured first</option>
-                    </select>
-                    <svg class="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none"
-                        stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </div>
+               <div class="relative w-full md:w-auto">
+    <select
+        class="appearance-none bg-white border border-gray-200 rounded-md pl-4 pr-10 py-2 text-sm text-gray-light1 w-full md:min-w-[320px] focus:outline-none">
+        <option value="" disabled selected hidden>Sort by</option>
+        
+        <option value="featured">Featured First</option>
+        <option value="latest">Latest First</option>
+        <option value="oldest">Oldest First</option>
+    </select>
+    
+    <svg class="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" fill="none"
+        stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+</div>
             </div>
 
             <!-- Tabs -->
